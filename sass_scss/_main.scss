@@ -1,0 +1,18 @@
+main {
+    // background-color: red;
+    min-height: calc(50vh); //jak to wyznaczyć ?
+
+    article.main {
+        margin: 15px 15px;
+
+        p {
+            margin: 8px 0;
+            cursor: context-menu;
+        }
+
+        p:first-child {
+            font-size: 20px;
+
+        }
+    }
+}

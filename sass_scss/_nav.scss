@@ -1,0 +1,47 @@
+nav {
+    min-height: 10vh;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    margin: 0 10px;
+
+    ol {
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin: 0 10px;
+            list-style-type: none;
+
+            a {
+                // background-color: $navColor;
+                display: inline-block;
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                background-color: black;
+                background-color: black;
+                color: $mainColor;
+            }
+
+            ul {
+                display: none;
+            }
+
+            a:hover>ul {
+                color: darkslateblue;
+                display: block;
+            }
+        }
+
+        li:hover {
+            ul {
+                display: block;
+            }
+        }
+    }
+}

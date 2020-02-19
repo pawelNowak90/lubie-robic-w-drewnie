@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: calc(100vh - 20px);
+    background-image: url("../img/wood-vertical.jpeg");
+    font-family: Sriracha, arial;
+}
+
+div.wrapper {
+    box-sizing: border-box; //DORA - TO MI NIE DZIAŁA TAK JAKBYM CHCIAŁ
+    margin: 0px 30px 0px 30px;
+    height: calc(100vh - 20px);
+    background-color: $mainColor;
+
+    &.blur {
+        filter: blur(3px);
+    }
+}
+
+header {
+    min-height: 3vh;
+    position: relative;
+
+    div.logo {
+        text-align: center;
+        margin-top: 20px;
+
+        a {
+            // display: inline-block;
+            text-decoration: none;
+            color: black;
+            line-height: 200%;
+            font-size: 2em;
+
+            img {
+                height: 32px;
+            }
+        }
+    }
+
+    div.hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+
+        i {
+            //DORA - czy to jest wyśrodkowane w pionie ?
+            font-size: 32px;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+}
