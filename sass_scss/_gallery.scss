@@ -1,0 +1,23 @@
+main {
+    article.gallery {
+        margin: 5px 15px;
+
+        div.container {
+            h3 {
+                text-align: center;
+                cursor: context-menu;
+                margin-bottom: 20px;
+            }
+
+            // div.col-sm-4 {
+            //     display: inline-block;
+            //     width: 32%;
+
+            img {
+                width: 100%;
+                height: auto;
+                margin: 10px;
+            }
+        }
+    }
+}

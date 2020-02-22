@@ -4,15 +4,16 @@
 }
 
 body {
-    height: calc(100vh - 20px);
+    min-height: calc(100vh - 20px);
     background-image: url("../img/wood-vertical.jpeg");
     font-family: Sriracha, arial;
+    margin-bottom: 35px; //żeby stopka-footer nie zaslaniała contentu strony - ale zrobilem to dla pliku galeria.html i zepsułem widok LP-index.html
 }
 
 div.wrapper {
     box-sizing: border-box; //DORA - TO MI NIE DZIAŁA TAK JAKBYM CHCIAŁ
     margin: 0px 30px 0px 30px;
-    height: calc(100vh - 20px);
+    min-height: calc(100vh - 20px);
     background-color: $mainColor;
 
     &.blur {
